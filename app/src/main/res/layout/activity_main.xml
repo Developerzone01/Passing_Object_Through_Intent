@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/formBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+             />
+
+        <ImageView
+            android:id="@+id/formLogo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flawless1" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formLogo"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/trans_white_rectangle"
+                android:orientation="vertical"
+
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="30dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_customer_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_white"
+                    android:drawableLeft="@drawable/a41931290_724199384606454_4200239404284903424_n"
+                    android:drawablePadding="5dp"
+                    android:hint="First Name"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="14sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_white"
+                    android:drawableLeft="@drawable/a41931290_724199384606454_4200239404284903424_n"
+                    android:drawablePadding="5dp"
+                    android:hint="Last Name"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="14sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_customer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_white"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:drawablePadding="5dp"
+                    android:hint="Email"
+
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="14sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_customer_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_white"
+                    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:hint="Phone Number"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="14sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_customer_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_white"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="5dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:id="@+id/btn_customer_registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="36dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Register"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
